@@ -17,7 +17,7 @@ gulp
 ##Building as a new Repo
 First steps are to checkout the boilerplate and link it to your own git repo.
 
-* Clone the repo: `git clone https://github.com/davydka/init.git folder-name`
+* Clone the repo: `git clone https://github.com/davydka/react-init.git folder-name`
 * Enter your repo's directory: `cd folder-name`
 * Remove this init from the git remote: `git remote rm origin`
 * If needed, create your new github repo from the command line: `curl -u 'USER' https://api.github.com/user/repos -d '{"name":"repo"}'`
