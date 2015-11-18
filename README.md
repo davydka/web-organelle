@@ -3,8 +3,10 @@ A simple starter repo for new projects. Uses a variety of tools including:
 
 * React
 * Browserify
-* Sass
-* Gulp
+* Watchify
+
+##TODO
+Fix Sass and/or investigate Post-CSS.
 
 ##Getting Started
 * Clone the repo: `git clone https://github.com/davydka/react-init`
@@ -12,7 +14,8 @@ A simple starter repo for new projects. Uses a variety of tools including:
 
 ```
 npm install
-gulp
+npm run watch
+sudo python -m SimpleHTTPServer 80
 ```
 ##Building as a new Repo
 First steps are to checkout the boilerplate and link it to your own git repo.

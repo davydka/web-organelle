@@ -4,22 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify ./js/src/app.jsx -t reactify --extension=.jsx --verbose -d > js/app.js",
+    "watch": "watchify ./js/src/app.jsx -t reactify --extension=.jsx --verbose -d -o js/app.js"
   },
   "author": "David Whitely",
   "license": "ISC",
   "dependencies": {
     "browserify": "^11.0.1",
     "firebase": "^2.2.9",
-    "gulp": "^3.9.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-server-livereload": "^1.4.0",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-util": "^3.0.6",
     "react": "^0.13.3",
     "reactify": "^1.1.1",
-    "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.3.1"
   }
 }
