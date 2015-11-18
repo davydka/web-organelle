@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var Firebase = require('firebase');
 
 var fbRef = new Firebase("https://<firebase-server>.firebaseio.com/");
@@ -10,4 +11,4 @@ var Hello = React.createClass({
 });
 
 var element = React.createElement(Hello, {});
-React.render(element, document.querySelector('.container'));
+ReactDOM.render(element, document.querySelector('.container'));
