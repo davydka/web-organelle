@@ -1,4 +1,4 @@
-#Poject Boilerplate
+#Project Boilerplate
 A simple starter repo for new projects. Uses a variety of tools including:
 
 * React
