@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server",
-    "watch": "watchify -v -t [ reactify ] -g [ uglifyify ] ./js/src/app.jsx --verbose -d -o js/app.js",
+    "watch": "watchify -v -t [ reactify ] -g [ uglifyify ] --extension=.jsx ./js/src/app.jsx --verbose -d -o js/app.js",
     "sass": "node-sass --source-map styles/ --watch styles/src/ --output styles/ main.css"
   },
   "author": "David Whitely",
