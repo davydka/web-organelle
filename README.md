@@ -4,9 +4,10 @@ A simple starter repo for new projects. Uses a variety of tools including:
 * React
 * Browserify
 * Watchify
+* NPM as a build tool
 
 ##TODO
-Fix Sass and/or investigate Post-CSS.
+Investigate Post-CSS.
 
 ##Getting Started
 * Clone the repo: `git clone https://github.com/davydka/react-init`
@@ -15,7 +16,8 @@ Fix Sass and/or investigate Post-CSS.
 ```
 npm install
 npm run watch
-sudo python -m SimpleHTTPServer 80
+npm run sass
+npm run serve
 ```
 ##Building as a new Repo
 First steps are to checkout the boilerplate and link it to your own git repo.

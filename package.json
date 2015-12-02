@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify ./js/src/app.jsx -t reactify --extension=.jsx --verbose -d > js/app.js",
-    "watch": "watchify ./js/src/app.jsx -t reactify --extension=.jsx --verbose -d -o js/app.js"
+    "serve": "http-server",
+    "watch": "watchify -v -t [ reactify ] -g [ uglifyify ] ./js/src/app.jsx --verbose -d -o js/app.js",
+    "sass": "node-sass --source-map styles/ --watch styles/src/ --output styles/ main.css"
   },
   "author": "David Whitely",
   "license": "ISC",
@@ -16,7 +17,7 @@
     "react": "0.14.2",
     "react-dom": "0.14.2",
     "reactify": "^1.1.1",
-    "tracking": "1.1.1",
+    "uglifyify": "3.0.1",
     "watchify": "^3.3.1"
   }
 }
