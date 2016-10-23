@@ -2,12 +2,8 @@
 A simple starter repo for new projects. Uses a variety of tools including:
 
 * React
-* Browserify
-* Watchify
-* NPM as a build tool
-
-##TODO
-Investigate Post-CSS.
+* Webpack
+* NPM
 
 ##Getting Started
 * Clone the repo: `git clone https://github.com/davydka/react-init`
@@ -16,8 +12,8 @@ Investigate Post-CSS.
 ```
 npm install
 npm run watch
-npm run sass
-npm run serve
+pm2 start http-server --name="app" -- -p 1981 -c-1 -s
+pm2 start browser-sync --name="app-sync" --interpreter="none" -- start --files '<APP-DIR>build/bundle.js' --proxy localhost:1981 --reload-delay 100 --no-ui --port 1881 --no-notify --no-open
 ```
 ##Building as a new Repo
 First steps are to checkout the boilerplate and link it to your own git repo.
